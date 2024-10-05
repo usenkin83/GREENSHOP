@@ -3,3 +3,91 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.blok {
+    max-width: 500px;
+    border: solid 2px black;
+    margin: auto;
+    padding: 50px 100px 0 100px
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px
+}
+
+.colorBlack {
+    color: black;
+}
+
+.color3d3d3d {
+    color:#3d3d3d
+}
+.color46a358 {
+    color:#46a358
+}
+.marginBotom15{
+    margin-bottom: 15px
+}
+.marginBotom16{
+    margin-bottom: 16px
+}
+.marginBotom27{
+    margin-bottom: 27px
+}
+.marginBotom40{
+    margin-bottom: 40px
+}
+.marginBotom41{
+    margin-bottom: 41px
+}
+.passwordRegister{
+    color: black;
+    font-size: 13px;
+    margin-bottom: 14px
+}
+.batonRegister{
+    width: 300px;
+    height: 45px;
+    background-color: #46a358;
+    border-radius: 5px;
+    margin-bottom: 32px
+}
+.textRegister{
+    color: white;
+    font-size: 16px
+}
+.orRegister{
+    text-align: center;
+    margin-bottom: 27px;
+    color: black;
+    font-size: 13px;
+}
+input {
+    width: 300px;
+    height: 40px;
+    border: solid 1px #EAEAEA;
+    border-radius: 5px;
+    padding-left: 14px;
+    font-size: 14px;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    width: 300px;
+    height: 40px;
+    border: solid 1px #EAEAEA;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.greenGif{
+margin: 0 0 -2px -100px
+}
+.info{
+    text-align: center;
+    margin: 50px 0;
+    font-size: 30px
+}
