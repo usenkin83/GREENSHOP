@@ -3,3 +3,242 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.blok {
+    max-width: 500px;
+    border: solid 2px black;
+    margin: auto;
+    padding: 50px 100px 0 100px
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px
+}
+
+.colorBlack {
+    color: black;
+}
+
+.color3d3d3d {
+    color:#3d3d3d
+}
+.color46a358 {
+    color:#46a358
+}
+.marginBotom15{
+    margin-bottom: 15px
+}
+.marginB16{
+    margin-bottom: 16px
+}
+.marginB27{
+    margin-bottom: 27px
+}
+.marginB40{
+    margin-bottom: 40px
+}
+.marginB41{
+    margin-bottom: 41px
+}
+.passwordRegister{
+    color: black;
+    font-size: 13px;
+    margin-bottom: 14px
+}
+.batonRegister{
+    width: 300px;
+    height: 45px;
+    background-color: #46a358;
+    border-radius: 5px;
+    margin-bottom: 32px
+}
+.textRegister{
+    color: white;
+    font-size: 16px
+}
+.orRegister{
+    text-align: center;
+    margin-bottom: 27px;
+    color: black;
+    font-size: 13px;
+}
+input {
+    width: 300px;
+    height: 40px;
+    border: solid 1px #EAEAEA;
+    border-radius: 5px;
+    padding-left: 14px;
+    font-size: 14px;
+}
+
+.typeA {
+    display: flex;
+    text-decoration: none;
+    width: 300px;
+    height: 40px;
+    border: solid 1px #EAEAEA;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.greenGif{
+margin: 0 0 -2px -100px
+}
+.info{
+    text-align: center;
+    margin: 50px 0;
+    font-size: 30px
+}
+
+a {
+    display: inline-block;
+}
+
+header {
+    padding-top: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.5);
+
+}
+
+header nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+header .logo {
+    margin-bottom: 18px;
+}
+
+header nav a {
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+header .login {
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 17px;
+    background: #46a358;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+
+}
+
+header .login:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../imagis/Logout.svg");
+    margin-right: 4px;
+}
+
+header nav li:after {
+    display: block;
+    width: 0;
+    content: "";
+    background-color: #46a358;
+    height: 3px;
+    margin-top: 25px;
+    transition: 0.4s;
+}
+
+header nav li:hover:after {
+    width: 100%;
+}
+
+main{
+    max-width: 1200px;
+    margin: auto;
+
+}
+.WelcomToGreenshot{
+    display: flex;
+    margin-top: 68px;
+
+}
+.WelcomToGreenshot1{
+    max-width: 650px;
+    margin-left: 40px;
+
+}
+
+main .p1 {
+
+    padding-bottom: 7px;
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    text-transform: uppercase;
+    color: #3d3d3d;
+}
+
+main h1 {
+
+
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    text-align: left;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    padding-bottom: 5px;
+
+}
+
+main h1 .PLANET {
+    color: #46a358;
+}
+
+main .p2 {
+
+    padding-bottom: 44px;
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #727272;
+}
+
+main .SHOPNOW {
+    width: 140px;
+    height: 40px;
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 17px;
+    color: #fff;
+    background: #46a358;
+    border-radius: 6px;
+    align-items: center;
+}
+
+
