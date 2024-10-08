@@ -64,7 +64,7 @@ h1 {
     color: black;
     font-size: 13px;
 }
-input {
+.Reg {
     width: 300px;
     height: 40px;
     border: solid 1px #EAEAEA;
