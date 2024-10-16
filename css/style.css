@@ -567,13 +567,14 @@ main .SHOPNOW {
 .Blog_Post .Blog_Post_footer{
     display: flex;
     gap: 44px;
-    background-color: #fbfbfb;
     width: 268px;
     height: 362px;
     text-align: left;
 
 }
-
+.Blog_Post .Blog_Post_footer article{
+    background-color: #fbfbfb;
+}
 .Blog_Post_footer .text_block{
  margin-left: 15px;
 
