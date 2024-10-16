@@ -624,7 +624,7 @@ line-height: 114%;
 .Blog_Post .Read_More_Arrow:hover{
 color: #46a358;}
 
-a::after {
+.Blog_Post_footer .Read_More_Arrow:after {
     content: '\279c';
 }
 
