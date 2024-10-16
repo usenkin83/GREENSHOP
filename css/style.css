@@ -11,8 +11,38 @@
     url('../fonts/cerapro-regular-webfont.svg#cera_proregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+
+@font-face {
+    font-family: 'Cera_Pro_Bold';
+    src: local('Cera Pro Bold'), local('Cera-Pro-Bold'),
+    url('../fonts/CeraPro-Bold/CeraPro-Bold.woff2') format('woff2'),
+    url('../fonts/CeraPro-Bold/CeraPro-Bold.woff') format('woff'),
+    url('../fonts/CeraPro-Bold/CeraPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera_Pro_Black';
+    src: local('../fonts/CeraPro-Black/Cera Pro Black'), local('Cera-Pro-Black'),
+    url('../fonts/CeraPro-Black/CeraPro-Black.woff2') format('woff2'),
+    url('../fonts/CeraPro-Black/CeraPro-Black.woff') format('woff'),
+    url('../fonts/CeraPro-Black/CeraPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera_Pro_Medium';
+    src: local('Cera Pro Medium'), local('Cera-Pro-Medium'),
+    url('../fonts/CeraPro-Medium/CeraPro-Medium.woff2') format('woff2'),
+    url('../fonts/CeraPro-Medium/CeraPro-Medium.woff') format('woff'),
+    url('../fonts/CeraPro-Medium/CeraPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 
 * {
     padding: 0;
@@ -39,7 +69,7 @@
 
 }
 
-h1 {
+.blok h1 {
 
     text-align: center;
     margin-bottom: 40px;
@@ -141,6 +171,8 @@ input {
 
 header {
     padding-top: 30px;
+    margin-bottom: 7px;
+
 }
 
 .container {
@@ -194,11 +226,12 @@ header .login:before {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url("../imagis/Logout.svg");
+    background-image: url("../images/Logout.svg");
     margin-right: 4px;
 }
 
 header nav li:after {
+
     display: block;
     width: 0;
     content: "";
@@ -208,7 +241,12 @@ header nav li:after {
     transition: 0.4s;
 }
 
+header nav a:hover {
+    font-family: Cera_Pro_Bold;
+}
+
 header nav li:hover:after {
+
     width: 100%;
 }
 
@@ -222,10 +260,13 @@ main {
 .WelcomToGreenshop {
     display: flex;
     background-color: #fbfbfb;
-    margin-top: 7px;
-
-
+    margin-bottom: 31px;
 }
+
+main .WelcomToGreenshop img {
+    max-width: 550px;
+}
+
 
 .WelcomToGreenshop1 {
     max-width: 650px;
@@ -234,20 +275,18 @@ main {
 }
 
 main .p1 {
+    font-family: 'Cera_Pro_Medium';
 
-    padding-bottom: 7px;
-    font-family: 'cera_proregular';
-    font-weight: 500;
     font-size: 14px;
     line-height: 114%;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #3d3d3d;
+    padding-bottom: 7px;
 }
 
 main h1 {
-
-
-    font-family: 'cera_proregular';
+    font-family: 'Cera_Pro_Black';
     font-weight: 900;
     font-size: 70px;
     text-align: left;
@@ -255,7 +294,6 @@ main h1 {
     text-transform: uppercase;
     color: #3d3d3d;
     padding-bottom: 5px;
-
 }
 
 main h1 .PLANET {
@@ -263,19 +301,19 @@ main h1 .PLANET {
 }
 
 main .p2 {
-
-    padding-bottom: 44px;
     font-family: 'cera_proregular';
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
     color: #727272;
+    padding-bottom: 44px;
 }
 
-main .SHOPNOW {
+main article .SHOPNOW {
     width: 140px;
     height: 40px;
-    font-family: 'cera_proregular';
+    display: inline-block;
+    font-family: 'Cera_Pro_Bold';
     font-weight: 700;
     font-size: 16px;
     line-height: 40px;
@@ -286,11 +324,7 @@ main .SHOPNOW {
     color: #fff;
     background: #46a358;
     border-radius: 6px;
-    align-items: center;
-}
 
-.product {
-    margin-top: 31px;
 }
 
 
@@ -323,6 +357,7 @@ main .SHOPNOW {
 }
 
 .product .left_side li a:hover {
+    font-family: Cera_Pro_Bold;
     color: #46a358;
     display: block;
     width: 100%;
@@ -337,6 +372,10 @@ main .SHOPNOW {
     max-width: 310px;
     height: 700px;
     background-color: #fbfbfb;
+}
+
+.product .left_side img {
+    width: 100%;
 }
 
 .product .rite_side {
@@ -358,6 +397,7 @@ main .SHOPNOW {
 }
 
 .rite_side .product_sort li a:hover {
+    font-family: Cera_Pro_Bold;
     color: #46a358;
     display: block;
     width: 100%;
@@ -380,6 +420,7 @@ main .SHOPNOW {
 
     font-family: 'cera_proregular';
     display: flex;
+    margin-bottom: 31px;
 
 }
 
@@ -406,41 +447,126 @@ main .SHOPNOW {
     display: flex;
     flex-wrap: wrap;
     gap: 33px;
+
+}
+
+.main_product_items article {
+    max-width: 258px;
+    border-top: solid 1px transparent;
+    position: relative;
     margin-bottom: 70px;
+
+
 }
 
-.main_product_items img {
+.main_product_items article:hover {
+    border-top: solid 1px #46a358;
 
-    width: 258px;
-    height: 300px;
+}
+
+.main_product_items .Purchase {
+    display: flex;
+    position: absolute;
+    margin-top: 258px;
+    gap: 26px;
+    justify-content: center;
+    width: 250px;
+    height: 20px;
+
+}
+
+article .Purchase {
+    visibility: hidden;
+}
+
+article:hover .Purchase {
+    visibility: visible;
+}
+
+.main_product_items .Purchase img {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+
+}
+
+.Purchase .svg_container {
+    position: relative;
+
+}
+
+.Purchase .svg_default {
+    display: block;
+
+}
+
+.Purchase .svg_hover {
+    display: none;
+}
+
+.Purchase .svg_container:hover .svg_default {
+    display: none;
+
+}
+
+.Purchase .svg_container:hover .svg_hover {
+    display: block;
+
+}
+
+
+.main_product_items article img {
+    width: 100%;
+    width: 250px;
+    height: 250px;
     background-color: #fbfbfb;
+    margin-top: 24px;
+    margin-bottom: 38px;
 
-
-    margin-bottom: 12px;
 }
 
-.main_product_items p {
+.main_product_items article .sale {
+    text-align: center;
+    width: 80px;
+    height: 29px;
+    margin-top: 14px;
+    position: absolute;
+
+
+    background-color: #46a358;
+}
+
+.main_product_items article .sale p {
+    font-family: 'Cera_Pro_Medium';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    padding-top: 6px;
+}
+
+.main_product_items article p {
     font-family: 'cera_proregular';
     font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
     margin-bottom: 6px;
-
 }
 
-.main_product_items a {
+.main_product_items article a {
     font-family: 'cera_proregular';
     font-weight: 700;
     font-size: 18px;
     color: #46a358;
-    margin-bottom: 6px;
     text-decoration: none;
+
 }
 
 .rite_side .pages {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 94px;
+    gap: 10px;
 }
 
 .rite_side .pages li {
@@ -455,7 +581,6 @@ main .SHOPNOW {
     font-size: 18px;
     color: #3d3d3d;
     border-radius: 4px;
-    margin-left: 10px;
     border: 1px solid #e5e5e5;
 }
 
@@ -468,40 +593,55 @@ main .SHOPNOW {
     stroke: #ffffff;
 }
 
-.info {
-    max-width: 1200px;
-    height: 300px;
+main .new_find_more {
     margin-bottom: 138px;
 }
 
-.info .container {
+main .new_find_more .container {
     display: flex;
     gap: 28px;
 }
 
-.info .Find_More_left {
+main .new_find_more .Find_More_left {
+    max-width: 586px;
     display: flex;
     padding-right: 33px;
     background-color: #fbfbfb;
+
 }
 
-.info article {
+.images_find_more {
+    max-width: 287px;
+    align-content: center;
+    background-color: #fbfbfb;
+
+}
+
+.images_find_more img {
+    width: 100%;
+    background-color: #fbfbfb;
+}
+
+
+main .new_find_more article {
     text-align: right;
 }
 
-.info article h3 {
+main .new_find_more article h3 {
 
-    font-family: 'cera_proregular';
+    font-family: 'Cera_Pro_Black';
     font-weight: 900;
     font-size: 18px;
     line-height: 133%;
+    text-align: right;
+    text-transform: uppercase;
     color: #3d3d3d;
-    margin-top: 37px;
+    margin-top: 69px;
     margin-bottom: 9px;
-    margin-left: 160px;
+    margin-left: 140px;
 }
 
-.info article p {
+main .new_find_more article p {
     font-family: 'cera_proregular';
     font-weight: 400;
     font-size: 14px;
@@ -510,8 +650,8 @@ main .SHOPNOW {
     color: #727272;
 }
 
-.info article a {
-    font-family: 'cera_proregular';
+main .new_find_more article a {
+    font-family: 'Cera_Pro_Medium';
     font-weight: 500;
     font-size: 14px;
     line-height: 143%;
@@ -524,96 +664,109 @@ main .SHOPNOW {
 
 }
 
-.info article .Arrow:after {
+main .new_find_more article .Arrow:after {
     content: "";
     display: inline-block;
     width: 18px;
     height: 14px;
-    background-image: url("../imagis/Arrow_Right.svg");
+    background-image: url("../images/Arrow_Right.svg");
     margin-left: 6px;
 }
 
-.info .Find_More_rite {
+main .new_find_more .Find_More_rite {
+    max-width: 586px;
     display: flex;
     padding-right: 33px;
     background-color: #fbfbfb;
 }
-.Blog_Post {
-    max-width: 1200px;
-    height: 447px;
+
+main .Blog_Post {
     margin-bottom: 100px;
 }
 
-.Blog_Post .container {
-    text-align: center;
 
-}
-.Blog_Post .container h2{
-    font-family: 'cera_proregular';
+main .Blog_Post .container h2 {
+    font-family: 'Cera_Pro_Bold';
     font-weight: 700;
     font-size: 30px;
     line-height: 53%;
-     color: #3d3d3d;
+    text-align: center;
+    color: #3d3d3d;
     margin-bottom: 15px;
 }
-.Blog_Post .container p{
+
+main .Blog_Post .container p {
     font-family: 'cera_proregular';
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
-       color: #727272;
+    text-align: center;
+    color: #727272;
     margin-bottom: 35px;
 }
-.Blog_Post .Blog_Post_footer{
+
+main .Blog_Post .Blog_Post_footer {
     display: flex;
     gap: 44px;
-    width: 268px;
-    height: 362px;
-    text-align: left;
 
 }
-.Blog_Post .Blog_Post_footer article{
+
+main .Blog_Post .Blog_Post_footer article {
+    max-width: 268px;
     background-color: #fbfbfb;
-}
-.Blog_Post_footer .text_block{
- margin-left: 15px;
 
 }
-.Blog_Post .Blog_Post_footer h6{
+
+main .Blog_Post .Blog_Post_footer img {
+    width: 100%;
+    margin-bottom: 9px;
+}
+
+main .Blog_Post_footer .text_block {
+    margin-left: 15px;
+
+
+}
+
+main .Blog_Post .Blog_Post_footer h6 {
     font-family: 'cera_proregular';
     font-weight: 500;
     font-size: 14px;
     line-height: 114%;
+    text-align: left;
     color: #46a358;
-    margin-top: 8px;
-    margin-bottom:4px ;
+    margin-bottom: 4px;
 }
-.Blog_Post .Blog_Post_footer h3{
+
+main .Blog_Post .Blog_Post_footer h3 {
     font-family: 'cera_proregular';
     font-weight: 700;
     font-size: 20px;
     line-height: 130%;
+    text-align: left;
     color: #3d3d3d;
-    margin-bottom:4px ;
+    margin-bottom: 4px;
 }
-.Blog_Post .Blog_Post_footer p{
+
+main .Blog_Post .Blog_Post_footer p {
     font-family: 'cera_proregular';
     font-weight: 400;
     font-size: 14px;
     line-height: 157%;
+    text-align: left;
     color: #727272;
-    margin-bottom:9px ;
+    margin-bottom: 9px;
 }
-.Blog_Post .Blog_Post_footer a{
-font-family: 'cera_proregular';
-font-weight: 500;
-font-size: 14px;
-line-height: 114%;
 
-
+main .Blog_Post .Blog_Post_footer a {
+    font-family: 'cera_proregular';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
     display: flex;
 }
-.Blog_Post .Read_More_Arrow{
+
+main .Blog_Post .Read_More_Arrow {
     display: inline-flex;
     align-items: center;
     gap: 5px;
@@ -621,13 +774,15 @@ line-height: 114%;
     transition: color 0.3s ease;
     color: #3d3d3d;
 }
-.Blog_Post .Read_More_Arrow:hover{
-color: #46a358;}
 
-.Blog_Post_footer .Read_More_Arrow:after {
-    content: '\279c';
+main .Blog_Post .Read_More_Arrow:hover {
+    color: #46a358;
 }
 
+
+main .Blog_Post_footer .Read_More_Arrow:after {
+    content: '\279c';
+}
 
 
 
