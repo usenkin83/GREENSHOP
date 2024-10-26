@@ -194,11 +194,93 @@ header nav ul {
     gap: 50px;
 }
 
+header nav ul .dropdown {
+    position: relative;
+}
+
+header nav ul .dropdown_2 {
+    position: relative;
+}
+
+
+header nav ul .sab_menu {
+    padding-top: 40px;
+    position: absolute;
+    min-width: 188px;
+    flex-direction: column;
+    gap: 0;
+    display: none;
+}
+
+header nav li:hover .sab_menu {
+    display: flex;
+
+}
+
+header nav li .sab_menu li:after {
+    display: none;
+
+}
+
+header nav .sab_menu li {
+
+    background: #edf6ee;
+    padding-top: 7px;
+    padding-bottom: 9px;
+    padding-left: 14px;
+
+
+}
+
+header nav .sab_menu li a {
+    font-family: cera_proregular;
+
+}
+
+
+header nav .sab_menu .dropdown_2 .arrow_dropdown_2:after {
+    content: url("../images/arrow_menu.svg");
+    position: absolute;
+    right: 13px;
+}
+
+header nav ul .sab_menu .dropdown_2 .sab_menu2 {
+    min-width: 178px;
+    position: absolute;
+    left: 188px;
+    top: -98px;
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    gap: 0;
+}
+
+header nav .sab_menu :hover {
+    background-color: #46a358;
+    color: #ffffff;
+    font-family: Cera_Pro_Bold;
+
+}
+
+header nav .sab_menu .dropdown_2 .arrow_dropdown_2:hover:after {
+    content: url("../images/arrow_menu_white.svg");
+    top: 10px;
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+
+header nav ul .sab_menu .dropdown_2:hover .sab_menu2 {
+    display: block;
+}
+
+
+header nav ul .sab_menu .sab_menu2
 header .logo {
     margin-bottom: 18px;
 }
 
-header nav a {
+header nav ul a {
     font-family: 'cera_proregular';
     font-weight: 400;
     font-size: 16px;
@@ -230,7 +312,7 @@ header .login:before {
     margin-right: 4px;
 }
 
-header nav li:after {
+header nav ul li:after {
 
     display: block;
     width: 0;
@@ -467,11 +549,11 @@ main article .SHOPNOW {
 .main_product_items .Purchase {
     display: flex;
     position: absolute;
-    margin-top: 258px;
+    top: 258px;
     gap: 26px;
     justify-content: center;
     width: 250px;
-    height: 20px;
+
 
 }
 
