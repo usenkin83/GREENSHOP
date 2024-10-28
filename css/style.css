@@ -232,12 +232,6 @@ header nav .sab_menu li {
 
 }
 
-header nav .sab_menu li a {
-    font-family: cera_proregular;
-
-}
-
-
 header nav .sab_menu .dropdown_2 .arrow_dropdown_2:after {
     content: url("../images/arrow_menu.svg");
     position: absolute;
@@ -257,15 +251,19 @@ header nav ul .sab_menu .dropdown_2 .sab_menu2 {
 
 header nav .sab_menu :hover {
     background-color: #46a358;
-    color: #ffffff;
-    font-family: Cera_Pro_Bold;
+
+
 
 }
+header nav .sab_menu :hover > a {
+     color: #ffffff;
+    font-family: Cera_Pro_Bold;
+}
 
-header nav .sab_menu .dropdown_2 .arrow_dropdown_2:hover:after {
+header nav .sab_menu .dropdown_2:hover > a:after  {
     content: url("../images/arrow_menu_white.svg");
-    top: 10px;
-    position: absolute;
+       top: 10px;
+        position: absolute;
     transform: rotate(180deg);
 }
 
@@ -275,7 +273,7 @@ header nav ul .sab_menu .dropdown_2:hover .sab_menu2 {
 }
 
 
-header nav ul .sab_menu .sab_menu2
+
 header .logo {
     margin-bottom: 18px;
 }
@@ -866,8 +864,3 @@ main .Blog_Post .Read_More_Arrow:hover {
 main .Blog_Post_footer .Read_More_Arrow:after {
     content: '\279c';
 }
-
-
-
-
-
