@@ -644,11 +644,12 @@ article:hover .Purchase {
 
 }
 
-.rite_side .pages {
+.rite_side  .pages {
     display: flex;
-    justify-content: flex-end;
     margin-bottom: 94px;
     gap: 10px;
+    justify-content: flex-end;
+
 }
 
 .rite_side .pages li {
