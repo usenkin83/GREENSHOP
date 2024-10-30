@@ -280,7 +280,13 @@ header .logo {
     margin-bottom: 18px;
     width: 150px;
     height: 35px;
+    display: inline-block;
+
 }
+
+
+
+
 
 header nav ul a {
     font-family: 'cera_proregular';
@@ -303,7 +309,9 @@ header .login {
     align-items: center;
     margin-bottom: 18px;
 
+
 }
+
 
 header .login:before {
     content: "";
@@ -317,6 +325,16 @@ header .login:before {
 header .login:hover {
     background-color: #41d243;
     color: #3d3d3d;
+    animation: zoom infinite 1s ;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
 
 }
 
@@ -633,10 +651,25 @@ article:hover .Purchase {
     height: 29px;
     margin-top: 14px;
     position: absolute;
-
-
     background-color: #46a358;
+    display: inline-block;
+    animation: pulse infinite 1s;
 }
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 
 .main_product_items article .sale p {
     font-family: 'Cera_Pro_Medium';
@@ -1040,7 +1073,6 @@ main .Blog_Post_footer .Read_More_Arrow:after {
     padding-right: 25px;
 
 }
-
 
 .footer_logo article {
     gap: 9px;
