@@ -1,31 +1,254 @@
 @media only screen and (max-width: 440px) {
+    header .container {
+        flex-direction: column;
+        position: relative;
+
+
+    }
+
+    header .container .logo {
+        left: 15px;
+        position: absolute;
+    }
+
+    header .container .login {
+        right: 15px;
+        position: absolute;
+    }
+
+    header .container nav {
+        padding-top: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    header nav ul .sab_menu {
+        left: -50px;
+    }
+
+    header nav .sab_menu .dropdown_2 .arrow_dropdown_2:after {
+        transform: rotate(90deg);
+    }
+
+    header nav ul .sab_menu .dropdown_2 .sab_menu2 {
+        left: 5px;
+        top: 31px;
+    }
+
+    main .WelcomToGreenshop {
+        flex-direction: column;
+    }
+
+    main .WelcomToGreenshop1 {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    main .WelcomToGreenshop1 h1 {
+        font-size: 45px;
+    }
+
+    main .product .container {
+        flex-direction: column;
+    }
+
+    main .left_side img {
+        display: none;
+    }
+
+    .product .left_side {
+        max-width: 440px;
+        max-height: 360px;
+        background-color: #fbfbfb;
+        margin: 15px;
+        border-bottom: 1px solid rgba(70, 163, 88, 0.5);
+    }
+
+    .product .left_side h4 {
+
+    }
+
+    .product .rite_side {
+        max-width: 440px;
+    }
+
+    .rite_side .product_sort ul {
+        flex-direction: column;
+        margin-left: 15px;
+        gap: 10px;
+    }
+
+    .rite_side .product_sort p {
+        margin-left: 70px;
+    }
+
+    main_product_items {
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    main_product_items article {
+        max-width: 440px;
+    }
+
+    .main_product_items article p {
+        margin-left: 100px;
+    }
+
+    .main_product_items article a {
+        margin-left: 100px;
+
+    }
+
+    .main_product_items article img {
+        margin-left: 50px;
+
+    }
+
+    .main_product_items article .sale {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .main_product_items article .sale p {
+        margin-left: 0;
+    }
+
+    .rite_side .pages {
+        padding-top: 5px;
+        margin-right: 15px;
+        margin-left: 15px;
+        border-top: 1px solid rgba(70, 163, 88, 0.5);
+    }
+
+    main .new_find_more .container {
+        flex-direction: column;
+    }
+
+    main .new_find_more .Find_More_left {
+        max-width: 440px;
+        flex-direction: column;
+        padding-bottom: 20px;
+
+    }
+
+    main .new_find_more .Find_More_left .images_find_more {
+        margin-left: 15px;
+    }
+
+    main .new_find_more article {
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    main .new_find_more article h3 {
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    main .new_find_more .Find_More_rite {
+        max-width: 440px;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    main .new_find_more .Find_More_rite .images_find_more {
+        margin-left: 15px;
+    }
+
+    main .Blog_Post .Blog_Post_footer {
+        flex-direction: column;
+    }
+
+    main .Blog_Post .Blog_Post_footer article {
+        max-width: 440px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .Blog_Post_info .Footer_info {
+        flex-direction: column;
+
+    }
+
+    .Blog_Post_info .Footer_info .article_info {
+        padding-top: 10px;
+        border-top: 1px solid rgba(70, 163, 88, 0.5);
+    }
+
+    .Blog_Post_info .article_info {
+        max-width: 440px;
+    }
+
+    .Footer_info .vertical-line {
+        display: none;
+    }
+
+    .Would_you_like {
+        max-width: 440px;
+        border-top: 1px solid rgba(70, 163, 88, 0.5);
+    }
+
+    .footer_logo {
+        max-width: 440px;
+        flex-direction: column;
+        height: 200px;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .footer_info {
+        flex-direction: column;
+    }
+
 
 }
+
 @media only screen and (max-width: 430px) {
 
+
 }
+
+
 @media only screen and (max-width: 428px) {
 
 }
+
 @media only screen and (max-width: 414px) {
 
 }
+
 @media only screen and (max-width: 412px) {
 
 }
+
 @media only screen and (max-width: 393px) {
 
 }
+
 @media only screen and (max-width: 390px) {
 
 }
+
 @media only screen and (max-width: 375px) {
+    main .WelcomToGreenshop1 h1 {
+        font-size: 35px;
+    }
+
+    .Would_you_like input {
+        width: 200px;
+
+    }
 
 }
+
 @media only screen and (max-width: 360px) {
 
 }
+
 @media only screen and (max-width: 320px) {
+
 
 }
 

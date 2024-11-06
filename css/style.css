@@ -592,7 +592,7 @@ main article .SHOPNOW:hover {
 
 .product .left_side {
     max-width: 310px;
-    height: 700px;
+    max-height: 700px;
     background-color: #fbfbfb;
 }
 
