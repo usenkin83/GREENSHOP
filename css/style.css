@@ -164,7 +164,7 @@
     max-width: 500px;
     border: solid 2px black;
     margin: auto;
-    padding: 50px 100px 0 100px
+    padding: 50px 100px 0 100px;
 }
 
 .blok input {
@@ -1115,8 +1115,6 @@ main .Blog_Post_footer .Read_More_Arrow:after {
 .Would_you_like .Join {
     display: flex;
     margin-bottom: 18px;
-
-
 }
 
 .Would_you_like input {
@@ -1125,7 +1123,7 @@ main .Blog_Post_footer .Read_More_Arrow:after {
     font-size: 14px;
     line-height: 114%;
     color: #acacac;
-    width: 270px;
+    max-width: 270px;
     height: 40px;
 
     border-top-left-radius: 5px;
