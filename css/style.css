@@ -1123,9 +1123,8 @@ main .Blog_Post_footer .Read_More_Arrow:after {
     font-size: 14px;
     line-height: 114%;
     color: #acacac;
-    max-width: 270px;
+    width: 250px;
     height: 40px;
-
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     padding-left: 14px;
@@ -1143,11 +1142,9 @@ main .Blog_Post_footer .Read_More_Arrow:after {
     font-size: 18px;
     line-height: 89%;
     color: #fff;
-
     width: 85px;
     height: 40px;
     justify-content: center;
-
     padding: 10px 26px;
     background-color: #46a358;
     border-top-right-radius: 5px;

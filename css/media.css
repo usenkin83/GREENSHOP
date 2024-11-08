@@ -96,6 +96,9 @@
     .Would_you_like {
         max-width: 250px;
     }
+    .Would_you_like input{
+       width: 200px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
