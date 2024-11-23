@@ -78,7 +78,19 @@
                 </li>
             </ul>
         </nav>
-        <a href="Registration.html" class="login" target="_blank">Login</a>
+        <ul>
+            <li>
+                <a href=""><img src="images/Magnifyng_glass.svg" alt="images"></a>
+            </li>
+            <li>
+                <a href="" class="Cart"><img src="images/Cart.svg" alt="images">
+                    <span>12</span>
+                </a>
+            </li>
+            <li>
+                <a href="Registration.html" class="login" target="_blank">Login</a>
+            </li>
+        </ul>
     </div>
 </header>
 <main>
@@ -98,34 +110,55 @@
     <section class="product">
         <div class="container">
             <div class="left_side">
-                <h4>Categories:</h4>
+                <h4>Categories</h4>
                 <ul>
                     <li>
-                        <a href="#">House Plants</a>
+                        <a href="#">House Plants<span>(33)</span></a>
                     </li>
                     <li>
-                        <a href="#">Potter Plants</a>
+                        <a href="#">Potter Plants<span>(12)</span></a>
                     </li>
                     <li>
-                        <a href="#">Seeds</a>
+                        <a href="#">Seeds<span>(65)</span></a>
                     </li>
                     <li>
-                        <a href="#">Small Plants</a>
+                        <a href="#">Small Plants<span>(39)</span></a>
                     </li>
                     <li>
-                        <a href="#">Big Plants</a>
+                        <a href="#">Big Plants<span>(23)</span></a>
                     </li>
                     <li>
-                        <a href="#">Succulents</a>
+                        <a href="#">Succulents<span>(17)</span></a>
                     </li>
                     <li>
-                        <a href="#">Trerrariums</a>
+                        <a href="#">Trerrariums<span>(19)</span></a>
                     </li>
                     <li>
-                        <a href="#">Gardening</a>
+                        <a href="#">Gardening<span>(13)</span></a>
                     </li>
                     <li>
-                        <a href="#">Accessories</a>
+                        <a href="#">Accessories<span>(18)</span></a>
+                    </li>
+                </ul>
+                <div class="price-range">
+                    <h3>Price Range</h3>
+                    <div class="range-slider">
+                        <input type="range" min="0" max="1500" value="39" id="minPrice" class="slider">
+                        <input type="range" min="0" max="1500" value="1230" id="maxPrice" class="slider">
+                    </div>
+                    <p>Price: <span id="range-min">$39</span> <span id="range-max">- $1230</span></p>
+                    <button class="filter-button">Filter</button>
+                </div>
+                <h4>Size</h4>
+                <ul>
+                    <li>
+                        <a href="#">Small<span>(119)</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Medium<span>(86)</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Large<span>(78)</span></a>
                     </li>
                 </ul>
                 <img src="images/Super_Sale.svg" alt="images">
